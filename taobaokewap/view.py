@@ -87,9 +87,6 @@ def reFreshIndex(request):
     tools.reFreshIndexHtml()
     return HttpResponse("<p>首页数据刷新！</p>")
 
-# def reFreshDH(request):
-#     tools.reFreshIndexHtml()
-#     return HttpResponse("<p>首页数据刷新！</p>")
 
 def jdsearch(request):
     good_html = {}
