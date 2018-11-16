@@ -1,0 +1,57 @@
+.orderd-logistics-box{
+    height:8rem;
+    margin:1rem .5rem;
+    background: linear-gradient(to right,#eb3c3c,#ff7459);
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+    color: #ffffff;
+}
+.orderd-logistics-icon{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.orderd-logistics-icon,.orderd-logistics-go{
+    width:2rem;
+    line-height:2rem;
+    text-align: center;
+    line-height:2rem;
+    position: absolute;
+    top: 1rem;
+    font-size: 1.5rem;
+}
+.orderd-logistics-icon{
+    left:0;
+}
+.orderd-logistics-go{
+    right:0;
+}
+.orderd-logistics-status{
+    position: relative;
+    padding:1rem 2rem;
+}
+p.orderd-logistics-updatetime {
+    font-size: .8rem;
+}
+.orderd-logistics-delivery{
+    padding-left:2rem;
+    position: relative;
+    color: #ffffff;
+}
+.orderd-logistics-timeicon{
+    display: inline-block;
+    width:2rem;
+    height:2rem;
+    text-align: center;
+    line-height:2rem;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.orderd-logistics-totime{
+    height:2rem;
+    line-height:2rem;
+}

@@ -1,0 +1,36 @@
+.payr-header-title{
+    height:3rem;
+    line-height:3rem;
+    text-align: center;
+    -webkit-box-shadow: 0 1px 1px 0 #cccccc;
+    -moz-box-shadow: 0 1px 1px 0 #cccccc;
+    box-shadow: 0 1px 1px 0 #cccccc;
+}
+.payr-result{
+    text-align: center;
+    margin-top: 5rem;
+}
+.payr-result-img{
+    width:8rem;
+}
+.payr-result-text {
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+}
+.payr-operate{
+    text-align: center;
+    margin: 2rem 0;
+}
+.payr-watch-order{
+    display: inline-block;
+    width:80%;
+    height:3rem;
+    text-align: center;
+    line-height:3rem;
+    background-color: #f23030;
+    color: #ffffff;
+    -webkit-border-radius:1.5rem;
+    -moz-border-radius:1.5rem;
+    border-radius:1.5rem;
+    letter-spacing: .5rem;
+}

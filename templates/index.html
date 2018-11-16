@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=0">
+    <title>首页</title>
+    <link rel="stylesheet" href="/static/css/icomoon.css">
+    <link rel="stylesheet" href="/static/css/fontawesome-all.css">
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/pictureSwitch.css">
+	<link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/searchlist.css">
+</head>
+<body>
+    <header class="i-header" >
+        <div class="i-header-center clearfix">
+            <label for="i-search" class="icon-font i-search-icon icon-font">&#xe986;</label>
+            <input type="search" id="i-search" class="i-search global-border-box" placeholder="输入关键字/淘口令/链接">
+        </div>
+    </header>
+    <div id="ps1-container" class="ps-container">
+        <div id="ps1-img-wrapper" class="ps-img-wrapper">
+               {{ lunbo }}
+        </div>
+        <a id="ps1-prev" href="javascript:;" class="icon-font ps-prev">&#xea53;</a>
+        <a id="ps1-next" href="javascript:;" class="icon-font ps-next">&#xea51;</a>
+        <div id="ps1-index-wrapper" class="ps-index-wrapper">
+            <a data-index="1" data-color="#687cc1" class="ps-index-on" href="javascript:;"></a>
+            <a data-index="2" data-color="#fa4268" class="ps-index-off" href="javascript:;"></a>
+            <a data-index="3" data-color="#ffd541" class="ps-index-off" href="javascript:;"></a>
+            <a data-index="4" data-color="#ebebeb" class="ps-index-off" href="javascript:;"></a>
+            <a data-index="5" data-color="#4daaef" class="ps-index-off" href="javascript:;"></a>
+        </div>
+    </div>
+    <nav id="i-grid" class="i-grid clearfix">
+        <ul class="i-grid-list">
+            <li class="i-grid-item">
+                <a href="searchlist?search=手机" class="i-grid-link global-border-box">
+                    <img src="/static/img/152811320611287135.png" alt="load failed" class="i-grid-img">
+                    <div class="i-grid-text">手机</div>
+                </a>
+            </li>
+            <li class="i-grid-item">
+                <a href="searchlist?search=天猫超市" class="i-grid-link global-border-box">
+                    <img src="/static/img/152405296913434353.png" alt="load failed" class="i-grid-img">
+                    <div class="i-grid-text">超市</div>
+                </a>
+            </li>
+            <li class="i-grid-item">
+                <a href="searchlist?search=母婴" class="i-grid-link global-border-box">
+                    <img src="/static/img/152405299943938292.png" alt="load failed" class="i-grid-img">
+                    <div class="i-grid-text">母婴</div>
+                </a>
+            </li>
+            <li class="i-grid-item">
+                <a href="searchlist?search=家电" class="i-grid-link global-border-box">
+                    <img src="/static/img/152576065500735348.png" alt="load failed" class="i-grid-img">
+                    <div class="i-grid-text">家电</div>
+                </a>
+            </li>
+            <li class="i-grid-item">
+                <a href="searchlist?search=特价" class="i-grid-link global-border-box">
+                    <img src="/static/img/152405308351618696.png" alt="load failed" class="i-grid-img">
+                    <div class="i-grid-text">大聚惠</div>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+    <nav class="i-nav">
+        <ul class="i-nav-list">
+            <li class="i-nav-item">
+                <a href="" class="i-nav-link i-nav-link-active">
+                    <i class="i-nav-icon icon-font icon-font">&#xe910;</i>
+                    <div class="i-nav-text">首页</div>
+                </a>
+            </li>
+            <li class="i-nav-item">
+                <a href="jdsearchlist" class="i-nav-link">
+                    <i class="i-nav-icon icon-font icon-font">&#xe9bb;</i>
+                    <div class="i-nav-text">京东券</div>
+                </a>
+            </li>
+            <li class="i-nav-item">
+                <a href="" class="i-nav-link">
+                    <i class="i-nav-icon icon-font icon-font">&#xe93a;</i>
+                    <div class="i-nav-text">实时攻略</div>
+                </a>
+            </li>
+            <li class="i-nav-item">
+                <a href="" class="i-nav-link">
+                    <i class="i-nav-icon icon-font icon-font">&#xe971;</i>
+                    <div class="i-nav-text">随意来一券</div>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+    <article class="i-topics">
+        <header class="i-topics-header">
+            <h3 class="i-topics-title">推荐商品</h3>
+            <div class="i-topics-line"></div>
+        </header>
+        {{ goods }}
+    </article>
+    <footer class="i-footer">
+        <h3 class="i-footer-title">END</h3>
+        <div class="i-footer-line"></div>
+    </footer>
+    <aside class="i-footer-white"></aside>
+    <aside id="global-gotop" class="global-gotop global-round">
+        <i class="icon-font">&#xea3a;</i>
+    </aside>
+    <div id="i-search-page" class="i-search-page">
+        <section class="i-search-page-header">
+            <section class="i-spage-header-search global-border-box">
+                <label for="i-spage-input" class="i-spage-searchicon icon-font">&#xe986;</label>
+                <form action="searchlist" method="get">
+                    <input id="i-spage-input" type="search" class="i-spage-input global-border-box" placeholder="输入关键字/淘口令/链接" name="search">
+                </form>
+            </section>
+            <section class="i-spage-header-cancel">
+                <span id="i-spage-cancel" class="i-spage-cancel">取消</span>
+            </section>
+        </section>
+        <section class="i-search-page-history"></section>
+        <section class="i-search-page-think"></section>
+    </div>
+
+    <script src="/static/js/pictureSwitch.js"></script>
+    <script src="/static/js/jquery-2.2.4.js"></script>
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/index.js"></script>
+    <script>
+        var clientWidth=window.innerWidth;
+        pictureSwitching(1,clientWidth,100,3000);
+    </script>
+</body>
+</html>

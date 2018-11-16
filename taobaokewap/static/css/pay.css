@@ -1,0 +1,89 @@
+.pay-header{
+    height:3rem;
+}
+.pay-header-title{
+    height:3rem;
+    text-align: center;
+    line-height:3rem;
+    box-shadow: 0 1px 1px 0 #ccc;
+}
+.pay-way-list{
+    padding-left:.5rem;
+    padding-right:.5rem;
+    margin-top: 1rem;
+}
+.pay-way-item{
+    height:3rem;
+    border-bottom:1px solid #cccccc;
+    position: relative;
+}
+.pay-way-img{
+    width:2rem;
+    height:2rem;
+    margin-top:.5rem;
+}
+.pay-way-name{
+    height:3rem;
+    line-height:3rem;
+    margin:0 .5rem;
+    display: inline-block;
+    vertical-align: top;
+}
+.pay-doing{
+    width:100%;
+    height:3rem;
+    position: fixed;
+    left:0;
+    bottom:0;
+    display: flex;
+}
+.pay-price{
+    flex:2;
+    height:3rem;
+    border-top: 1px solid #ccc;
+}
+.pay-btn-box{
+    flex:1;
+    height:3rem;
+}
+.pay-price-label{
+    height:3rem;
+    line-height:3rem;
+    font-size:.9rem;
+    color: #999;
+    margin:0 .5rem;
+}
+.pay-price-num{
+    display: inline-block;
+    height:3rem;
+    line-height:3rem;
+    font-size: 1.5rem;
+    color: #f23030;
+    font-weight: bold;
+}
+.pay-btn{
+    display: inline-block;
+    width:100%;
+    height:3rem;
+    text-align: center;
+    line-height:3rem;
+    color: #ffffff;
+    background-color: #f23030;
+}
+.pay-way-item:first-child{
+    background-color: #f7f7f7;
+}
+.pay-way-title{
+    margin: 1rem .5rem;
+    padding-left: .5rem;
+    color: #999;
+    border-left: .2rem solid #f23030;
+    font-size: 1rem;
+}
+.pay-way-item label {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+}

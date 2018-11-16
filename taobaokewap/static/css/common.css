@@ -1,0 +1,175 @@
+*{
+    padding:0;
+    margin:0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+table,th,td{
+    border:1px solid #ccc;
+}
+table{
+    border-collapse:collapse;/*去重合*/
+    text-align: left;
+}
+th,td{
+    line-height:1.5rem;
+    padding: .5rem;
+}
+p{
+    line-height: 1.5rem;
+}
+input[type="button"],input[type="submit"],input[type="reset"]{
+    -webkit-appearance: none;/*禁用iPhone safari浏览器按钮特殊样式,会把radio的大小设置为0*/
+    background-color: #f7f7f7;
+}
+
+/*解决浮动元素父容器塌陷问题 begin*/
+.clearfix{*zoom:1}/*IE6和IE7*/
+.clearfix:after{content:"";display:block;clear:both;}/*IE8+和主流浏览器*/
+/*解决浮动元素父容器塌陷问题 end*/
+.global-border-box{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.global-round{
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+.global-gotop{
+    width:2rem;
+    height:2rem;
+    background-color: #000;
+    opacity:.3;
+    text-align: center;
+    line-height:2rem;
+    font-size:2rem;
+    color: #ffffff;
+    position: fixed;
+    right:1rem;
+    bottom:4rem;
+    display: none;
+}
+
+/* 全局radio样式 begin */
+.global-radio{
+    height:3rem;
+    line-height: 3rem !important;
+    margin:0 .5rem;
+    color: #999;
+    float: right;
+}
+.global-radio-active{
+    color: red;
+}
+.global-radio-hidden{
+    display: none;
+}
+/* 全局radio样式 end */
+
+/*全局头部 begin*/
+.global-header{
+    -webkit-box-shadow: 0 1px 1px 0 #cccccc;
+    -moz-box-shadow: 0 1px 1px 0 #cccccc;
+    box-shadow: 0 1px 1px 0 #cccccc;
+    position: relative;
+    background-color: #fff;
+}
+.global-header-title{
+    height:3rem;
+    text-align: center;
+    line-height:3rem;
+    position: relative;
+}
+.global-header-back,.global-header-menu{
+    display: inline-block;
+    width:3rem;
+    height:3rem;
+    text-align: center;
+    line-height:3rem !important;
+    font-size:2rem;
+    position: absolute;
+    top:0;
+}
+.global-header-back{
+    left:0;
+    z-index:1;
+}
+.global-header-menu{
+    right:0;
+}
+.global-header-aside{
+    width:5.5rem;
+    background-color: rgba(255,255,255,.9);
+    position: absolute;
+    top:3rem;
+    right:1px;
+    padding: .5rem;
+    display: none;
+    -webkit-box-shadow: 0 0 1px 1px #f7f7f7;
+    -moz-box-shadow: 0 0 1px 1px #f7f7f7;
+    box-shadow: 0 0 1px 1px #f7f7f7;
+    z-index:1;
+}
+a.global-header-more-link {
+    display: block;
+}
+
+i.global-header-more-icon.icon-font {
+    width: 1rem;
+    height: 2rem;
+    line-height: 2rem;
+    display: inline-block;
+    float: left;
+    margin-right:.5rem;
+}
+
+span.global-header-more-text {
+    width: 4rem;
+    height: 2rem;
+    line-height: 2rem;
+    display: inline-block;
+    float: left;
+}
+/*全局头部 end*/
+
+html{
+    font-size: 12px;
+    color: #333;
+}
+/*iphone5*/
+@media screen and (min-width: 320px){
+    html{
+        font-size: 14px;
+    }
+}
+/*iphone6*/
+@media screen and (min-width: 375px){
+    html{
+        font-size: 16px;
+    }
+}
+/*iphone6 plus*/
+@media screen and (min-width: 414px){
+    html{
+        font-size: 18px;
+    }
+}
+/*ipad*/
+@media screen and (min-width: 768px){
+    html{
+        font-size: 20px;
+    }
+}
+/*ipad pro*/
+@media screen and (min-width: 1024px){
+    html{
+        font-size: 22px;
+    }
+}

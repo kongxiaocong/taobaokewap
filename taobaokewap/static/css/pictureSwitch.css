@@ -1,0 +1,60 @@
+.ps-container{
+    overflow: hidden;
+    position: relative;
+}
+.ps-img-wrapper{
+    position: relative;
+}
+.ps-img-wrapper img{
+    float:left;
+}
+.ps-prev, .ps-next {
+    display: inline-block;
+    height: 70px;
+    background-color: black;
+    font-size: 36px;
+    color: white;
+    line-height: 70px;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    opacity: .3;
+    filter: Alpha(opacity=30);
+    text-decoration: none;
+    display: none;
+}
+.ps-prev{
+    left:20px;
+}
+.ps-next{
+    right:20px;
+}
+.ps-index-wrapper {
+    width: 400px;
+    height: .5rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 0;
+    text-align: center;
+}
+.ps-index-on, .ps-index-off {
+    display: inline-block;
+    width: 1rem;
+    height: .2rem;
+    vertical-align: top;
+}
+.ps-index-on{
+    background-color: white;
+    opacity: .6;
+    filter: Alpha(opacity=60);
+}
+.ps-index-off{
+    background-color: black;
+    opacity: .3;
+    filter: Alpha(opacity=30);
+}
+.ps-img-wrapper{
+    font-size:0;
+    position: relative;
+}

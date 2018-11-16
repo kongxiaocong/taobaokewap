@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=0">
+  <title>搜索列表</title>
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/icomoon.css">
+    <link rel="stylesheet" href="/static/css/fontawesome-all.css">
+    <link rel="stylesheet" href="/static/css/searchlist.css">
+</head>
+<body>
+    <header class="sl-header">
+        <section id="global-back" class="sl-header-left">
+            <a href="/" class="sl-header-left-link icon-font">&#xea53;</a>
+        </section>
+        <section class="sl-header-center">
+            <label for="sl-input" class="sl-header-search-icon icon-font">&#xe986;</label>
+			<form action="searchlist" method="get">
+            <input id="sl-input" type="search" class="sl-header-search-input global-border-box" placeholder="输入关键字/淘口令/链接" name="search">
+			</form>
+        </section>
+        <section id="sl-header-right" class="sl-header-right">
+            <a href="javascript:;" class="sl-header-right-link icon-font">&#xe90b;</a>
+        </section>
+        <aside id="global-header-aside" class="global-header-aside">
+            <ul class="global-header-more-list">
+                <li class="global-header-more-item">
+                    <a href="/" class="global-header-more-link clearfix">
+                        <i class="global-header-more-icon icon-font">&#xe910;</i>
+                        <span class="global-header-more-text">首页</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </header>
+          <!----   <nav class="sl-filter clearfix">
+        <section class="sl-filter-section sl-filter-sort global-border-box">
+            <span class="sl-filter-text">综合</span>
+            <i class="sl-filter-icon icon-font">&#xea52;</i>
+         <aside class="sl-filter-options">
+                <ul class="sl-filter-options-list">
+                    <li class="sl-filter-options-item sl-filter-options-active">
+                        <a href="javascript:;" class="sl-filter-options-link">综合</a>
+                        <i class="sl-filter-options-checked icon-font">&#xe90e;</i>
+                    </li>
+                    <li class="sl-filter-options-item">
+                        <a href="javascript:;" class="sl-filter-options-link">最新上架</a>
+                        <i class="sl-filter-options-unchecked icon-font">&#xe90e;</i>
+                    </li>
+                    <li class="sl-filter-options-item">
+                        <a href="javascript:;" class="sl-filter-options-link">价格最低</a>
+                        <i class="sl-filter-options-unchecked icon-font">&#xe90e;</i>
+                    </li>
+                    <li class="sl-filter-options-item">
+                        <a href="javascript:;" class="sl-filter-options-link">价格最高</a>
+                        <i class="sl-filter-options-unchecked icon-font">&#xe90e;</i>
+                    </li>
+                    <li class="sl-filter-options-item">
+                        <a href="javascript:;" class="sl-filter-options-link">评价最多</a>
+                        <i class="sl-filter-options-unchecked icon-font">&#xe90e;</i>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+        <section class="sl-filter-section sl-filter-hot global-border-box">
+            <span class="sl-filter-text">销量</span>
+        </section>
+        <section class="sl-filter-section sl-filter-service global-border-box">
+            <span class="sl-filter-text">服务</span>
+            <i class="sl-filter-icon icon-font">&#xea52;</i>
+            <aside class="sl-filter-options">
+                <ul class="sl-filter-options-list">
+                    <li class="sl-filter-options-item sl-filter-options-active">
+                        <a href="javascript:;" class="sl-filter-options-link">爱买物流</a>
+                        <i class="sl-filter-options-checked icon-font">&#xe90e;</i>
+                    </li>
+                    <li class="sl-filter-options-item">
+                        <a href="javascript:;" class="sl-filter-options-link">有货优先</a>
+                        <i class="sl-filter-options-checked icon-font">&#xe90e;</i>
+                    </li>
+                    <li class="sl-filter-options-item">
+                        <a href="javascript:;" class="sl-filter-options-link">货到付款</a>
+                        <i class="sl-filter-options-checked icon-font">&#xe90e;</i>
+                    </li>
+                    <li class="sl-filter-options-item">
+                        <a href="javascript:;" class="sl-filter-options-link">促销商品</a>
+                        <i class="sl-filter-options-checked icon-font">&#xe90e;</i>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+        <section id="sl-filter" class="sl-filter-section sl-filter-more global-border-box">
+            <span class="sl-filter-text">筛选</span>
+            <i class="sl-filter-icon icon-font">&#xe90a;</i>
+        </section>
+    </nav>---->
+      {{ goods }}
+    <aside id="global-gotop" class="global-gotop global-round">
+        <i class="icon-font">&#xea3a;</i>
+    </aside>
+    <aside id="sl-filter-product-opacity" class="sl-filter-product-opacity"></aside>
+    <aside id="sl-filter-aside" class="sl-filter-product">
+        <section class="sl-filter-product-item clearfix">
+            <header class="sl-filter-product-header clearfix">
+                <span class="sl-filter-product-title">屏幕尺寸</span>
+                <span class="sl-filter-product-icon icon-font">&#xea52;</span>
+            </header>
+            <aside class="sl-filter-product-content">
+                <ul class="sl-filter-value-list">
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link sl-filter-value-active">4.0英寸</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">4.7英寸</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">5.5英寸</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">5.8英寸</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">其他</a>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+        <section class="sl-filter-product-item clearfix">
+            <header class="sl-filter-product-header clearfix">
+                <span class="sl-filter-product-title">网络</span>
+                <span class="sl-filter-product-icon icon-font">&#xea52;</span>
+            </header>
+            <aside class="sl-filter-product-content">
+                <ul class="sl-filter-value-list">
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link sl-filter-value-active">移动4G</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">联通4G</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">电信4G</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">移动4G/联通4G</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">移动4G/联通4G/电信4G</a>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+        <section class="sl-filter-product-item clearfix">
+            <header class="sl-filter-product-header clearfix">
+                <span class="sl-filter-product-title">机身内存</span>
+                <span class="sl-filter-product-icon icon-font">&#xea52;</span>
+            </header>
+            <aside class="sl-filter-product-content">
+                <ul class="sl-filter-value-list">
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link sl-filter-value-active">16G</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">32G</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">64G</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">128G</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">256G</a>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+        <section class="sl-filter-product-item clearfix">
+            <header class="sl-filter-product-header clearfix">
+                <span class="sl-filter-product-title">运行内存</span>
+                <span class="sl-filter-product-icon icon-font">&#xea52;</span>
+            </header>
+            <aside class="sl-filter-product-content">
+                <ul class="sl-filter-value-list">
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link sl-filter-value-active">2G以下</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">3G</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">4G</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">5G</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">6G</a>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+        <section class="sl-filter-product-item clearfix">
+            <header class="sl-filter-product-header clearfix">
+                <span class="sl-filter-product-title">CPU核数</span>
+                <span class="sl-filter-product-icon icon-font">&#xea52;</span>
+            </header>
+            <aside class="sl-filter-product-content">
+                <ul class="sl-filter-value-list">
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link sl-filter-value-active">单核</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">二核</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">四核</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">八核</a>
+                    </li>
+                    <li class="sl-filter-value-item">
+                        <a href="javascript:;" class="sl-filter-value-link">其他</a>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+        <aside class="sl-filter-white"></aside>
+    </aside>
+    <aside id="sl-filter-fixed" class="sl-filter-fixed">
+        <input class="sl-filter-reset" type="reset" value="重置">
+        <input id="sl-filter-commit" class="sl-filter-commit" type="submit" value="确定">
+    </aside>
+    <script src="/static/js/jquery-2.2.4.js"></script>
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/searchlist.js"></script>
+
+</body>
+</html>

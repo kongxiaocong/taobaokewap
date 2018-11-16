@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="youzi">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>coupon详情</title>
+</head>
+<body class="t3">
+    <script src="/static/js/zepto.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script type="text/javascript" charset="utf-8" async=""  src="/static/js/mobile-wx-share.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" src="/static/js/portal_basic.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" src="/static/js/require.zepto.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async=""  src="/static/js/jweixin-1.0.0.js"></script>
+    <style type="text/css">
+    .green {
+        background-color: #008000;
+        color: #ffffff;
+        font-size: 24px;
+        width: 100%;
+        height: 15vw;
+        margin: 0 auto;
+        display: block;
+        border: none;
+    }
+    .red {
+        background-color: #f54d23;
+        color: #ffffff;
+        width: 100%;
+        height: 15vw;
+        margin: 0 auto;
+        display: block;
+        font-size: 24px;
+        border: none;
+    }
+    .goto-app {
+        width: 100%;
+        height: 10vw;
+        background-color: #FE3336;
+        color: #FFFFFF;
+        line-height: 10vw;
+        font-size: 16px;
+        text-align: center;
+    }
+    .goto-app .gm-left {
+        width: 10vw;
+        height: 100%;
+        float: left;
+    }
+    .goto-app .gm-middle {
+        width: 60%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+    }
+    .goto-app .gm-right {
+        width: 10vw;
+        height: 100%;
+        float: right;
+    }
+    .goto-app .gm-left img {
+        margin-top: -1vw;
+        width: 8vw;
+    }
+    .goto-app .gm-right img {
+        margin-top: -1vw;
+        height: 8vw;
+    }
+    #code {
+        display: none;
+    }
+    .nav-icon-more {
+        display: none;
+    }
+    </style>
+
+    <div style="margin: 0 auto;width: 100%;">
+        <div style="height: 20px;"></div>
+        <div class="pic" style="margin: 0 auto;width: 100%;">
+            <img id="pic" src="/static/img/O1CN0128vIc8zBz2yUnSd_!!0-item_pic.jpg_480x480" alt="" style="margin:0 auto;display:block;width: 80%;">
+        </div>
+        <div style="height: 5vw;"></div>
+        <div style="margin: 0 auto;width: 100%;">
+            <div style="margin: 0 auto;width: 80%;text-align: center;font-size: 16px;">
+			             <h5>点击上面图片前往web端「领取优惠券」</h5>
+                <h5>复制下面淘口令，打开「手淘」即可「领取优惠券」并购买</h5>
+            </div>
+        </div>
+        <div style="height: 5vw;"></div>
+        <div id="content" class="content" style="margin: 0 auto;width: 100%;text-align: center;font-size: 30px;height: 40px;line-height: 40px;">￥fh69b5FH7jI￥</div>
+        <div style="height: 5vw;"></div>
+        <div style="width: 100%;margin: 0 auto;">
+            <input type="button" id="youzicopy" value="复制淘口令" class="red" data-clipboard-text="￥fh69b5FH7jI￥">
+        </div>
+    </div>
+    <script type="application/javascript">
+        window.mobileUtil = (function(win, doc) {
+            var UA = navigator.userAgent.toLowerCase(),
+            isAndroid = /android|adr|linux/gi.test(UA),
+            isIOS = /iphone|ipod|ipad/gi.test(UA) && !isAndroid,
+            isBlackBerry = /blackberry/i.test(UA),
+            isWindowPhone = /iemobile/i.test(UA),
+            isMobile = isAndroid || isIOS || isBlackBerry || isWindowPhone;
+            return {
+                isAndroid: isAndroid,
+                isIOS: isIOS,
+                isMobile: isMobile,
+                isWeixin: /micromessenger/gi.test(UA),
+                isQQ: /mqqbrowser/gi.test(UA),
+                isPC: !isMobile
+            };
+        })(window, document);
+
+        $("#youzicopy").click(function() {
+            $("#youzicopy").attr("data-clipboard-text", $("#content").text());
+            var tklT = new Clipboard('#youzicopy', {
+                text: $("#content").text()
+            });
+            tklT.on("success", function(t) {
+                $('#youzicopy').val("复制成功，打开手淘购买").removeClass("red").addClass("green");
+                setTimeout(function() {
+                    $('#youzicopy').val("复制").removeClass("green").addClass("red");
+                }, 1000);
+
+                if (mobileUtil.isWeixin && mobileUtil.isIOS)
+                    statCopy(1);
+            })
+            tklT.on("error", function(pm) {
+                $('#youzicopy').html("复制失败,更换浏览器").addClass("err");
+                setTimeout(function() {
+                    $('#youzicopy').html("复制口令").removeClass("err");
+                }, 600);
+
+                if (mobileUtil.isWeixin && mobileUtil.isIOS)
+                    statCopy(1);
+            })
+        });
+    </script>
+    </div>
+    <div class="mod mod-js">
+        <script type="text/javascript" src="/static/js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="/static/js/clipboard.1.7.1.min.js"></script>
+    </div>
+</div>
+</div>
+</div>
+</body></html>

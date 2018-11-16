@@ -1,0 +1,23 @@
+.slider-wrapper{
+    overflow: hidden;
+    position: relative;
+}
+.slider-img-wrapper{
+    position: relative;
+    left:0;
+}
+.slider-img{
+    float: left;
+}
+.slider-counter{
+    width:3rem;
+    height:3rem;
+    background-color: #000;
+    opacity: .3;
+    color: #ffffff;
+    position: absolute;
+    right:0;
+    bottom:0;
+    text-align: center;
+    line-height: 3rem;
+}
