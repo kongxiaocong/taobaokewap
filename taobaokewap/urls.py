@@ -24,4 +24,5 @@ urlpatterns = [
     url(r'^coupon', view.coupon),
     url(r'^reFreshIndex/youziaixiaocong', view.reFreshIndex),
     url(r'^jdsearch', view.jdsearch),
+    url(r'^wxapi', view.wxapi),
 ]
