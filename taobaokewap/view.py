@@ -1,7 +1,7 @@
 # coding:utf-8
 from django.shortcuts import render
 from django.conf import settings
-from . import taobaokeApi,tools,jdApi,wxapi
+from . import taobaokeApi,tools,jdApi,wxtools
 import sys
 from django.utils.safestring import mark_safe
 import logging
@@ -127,5 +127,5 @@ def wxapi(request):
         else:
           return HttpResponse("field")
     else:
-        othercontent = wxapi.autoreply(request)
+        othercontent = wxtools.autoreply(request)
         return HttpResponse(othercontent)
